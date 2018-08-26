@@ -1,0 +1,16 @@
+{
+  "name": "curie-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "purecss": "^1.0.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.9.7"
+  }
+}
