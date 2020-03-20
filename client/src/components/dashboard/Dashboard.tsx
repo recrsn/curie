@@ -1,6 +1,6 @@
 import React from 'react';
-import URIMaker from './URIMaker';
-import History from './History';
+import URIMaker from '../URIMaker/URIMaker';
+import History from '../history/History';
 
 import './Dashboard.css';
 

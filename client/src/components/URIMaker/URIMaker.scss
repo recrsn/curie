@@ -1,0 +1,14 @@
+.URIMaker {
+    display: flex;
+    flex-direction: column;
+
+    .url-field {
+        flex-grow: 1;
+    }
+
+    .btn-create {
+        margin-left: 1em;
+        background-color: #5eb95e;
+        color: #f0f0f0;
+    }
+}

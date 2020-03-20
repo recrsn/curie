@@ -1,0 +1,12 @@
+@import '~purecss/build/pure.css';
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60rem;
+}

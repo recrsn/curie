@@ -1,6 +1,6 @@
 import React from 'react';
-import noData from '../images/no-data.svg';
 import './History.css';
+import noData from '../../images/no-data.svg'
 
 const History = () => (
     <div className="History">
@@ -9,7 +9,7 @@ const History = () => (
             <div>
                 You don't have any URLs to show!
             </div>
-            
+
         </div>
     </div>
 )

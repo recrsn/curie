@@ -1,17 +1,17 @@
 import React from 'react';
-import './URIMaker.css';
+import './URIMaker.scss';
 
 export default class URIMaker extends React.Component {
     render() {
         return (
-            <iv className="URIMaker">
+            <div className="URIMaker">
                 <h1>
                     Simplify your links
                 </h1>
                 <form className="pure-form">
                     <div className="row">
-                        <input className="url-field" type="url" placeholder="Your original URI here" />
-                        <button className="pure-button pure-button-primary btn-create" type="submit">Shorten URL</button>
+                        <input className="url-field pure-input-1" type="url" placeholder="Your original URI here" />
+                        <button className="btn-create pure-button" type="submit">Shorten URL</button>
                     </div>
                     <div>
                         {/* <label>
@@ -20,7 +20,7 @@ export default class URIMaker extends React.Component {
                         </label> */}
                     </div>
                 </form>
-            </iv>
+            </div>
         );
     }
 }
