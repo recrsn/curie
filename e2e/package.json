@@ -1,0 +1,17 @@
+{
+  "name": "curie-e2e",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.11.0",
+    "@types/superagent": "^4.1.7",
+    "jest": "^25.2.7",
+    "superagent": "^5.2.2",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "test:server": "jest server"
+  }
+}
