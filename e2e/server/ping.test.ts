@@ -6,8 +6,6 @@ describe('/ping', () => {
             .get('/ping');
 
         expect(response.status).toBe(200);
-        expect(response.body).toEqual({
-            message: "pong"
-        });
+        expect(response.text).toBe("pong");
     });
 });

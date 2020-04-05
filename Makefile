@@ -1,5 +1,5 @@
 e2e_server:
-	$(MAKE) --directory=server start
+	$(MAKE) --directory=server build start
 	$(MAKE) --directory=e2e server
 	$(MAKE) --directory=server stop
 

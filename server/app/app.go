@@ -13,8 +13,7 @@ func NewApp() *App {
 }
 
 func (a *App) Mount(r gin.IRoutes) {
-	r.GET("/", versionInfo)
-
+	r.GET("/info", versionInfo)
 	r.GET("/ping", ping)
 }
 

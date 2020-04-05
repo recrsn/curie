@@ -1,13 +1,15 @@
 VERSION := $(shell git describe --tags --always --first-parent)
 BUILDTIME := $(shell date -u '+%Y-%m-%dT%H:%M:%SZ')
 
-GOLDFLAGS += -X app.Version=$(VERSION)
+GOLDFLAGS += -X github.com/curie/server/app.Version=$(VERSION)
 GOFLAGS = -ldflags "$(GOLDFLAGS)"
 
-run: stop build
+build: compile test
+
+run: stop
 	./curie
 
-start: stop build
+start: stop
 		./curie& \
  		echo $$! >  curie.pid
 
@@ -19,6 +21,4 @@ compile:
 	go build -o curie $(GOFLAGS) .
 
 test:
-	go test $(GOFLAGS)
-
-build: compile test
+	go test $(GOFLAGS) './...'
